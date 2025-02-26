@@ -26,23 +26,25 @@
       display: block;
     }
 
-    #header-box ul {
-      position: absolute;
-      top: 62px;
-      /* Adjust to position below menu icon */
-      right: 5px;
-      width: 40%;
-      background-color: #3e3e3e;
-      /* Light brown */
-      z-index: 9;
-      display: none;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-    }
+    @media screen and (max-width: 768px) {
+      #header-box ul {
+        position: absolute;
+        top: 62px;
+        /* Adjust to position below menu icon */
+        right: 5px;
+        width: 40%;
+        background-color: #3e3e3e;
+        /* Light brown */
+        z-index: 9;
+        display: none;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+      }
 
-    #header-box ul.mobile-menu-open {
-      display: block;
+      #header-box ul.mobile-menu-open {
+        display: block;
+      }
     }
   </style>
 
