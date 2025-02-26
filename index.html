@@ -1,77 +1,97 @@
 <html lang="en">
-  <head>
-    <!-- basic seo -->
-    <meta charset="UTF-8" />
-    <title>First Dog Ever Photographed</title>
-    <meta name="author" content="" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="shortcut icon" href="img/img.jpg" type="image/x-icon" />
+<head>
+  <!-- basic seo -->
+  <meta charset="UTF-8" />
+  <title>First Dog Ever Photographed</title>
+  <meta name="author" content="" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap"
-      rel="stylesheet"
-    />
+  <link rel="shortcut icon" href="img/img.jpg" type="image/x-icon" />
 
-    <!-- css links -->
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-  </head>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap"
+    rel="stylesheet" />
 
-  <body cz-shortcut-listen="true">
-    <!-- header -->
-    <header id="header">
-      <div class="container">
-        <div id="header-box">
-          <img id="logo" src="img/logo.png" alt="logo" />
+  <style>
+    #header-box ul {
+      display: none;
+    }
 
-          <ul>
-            <li><a href="#hero">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#token">TOKEN</a></li>
-            <li><a href="#join">COMMUNITY</a></li>
-            <li>
-              <a href="https://t.me/PWBonsol" target="_blank" rel="noopener noreferrer"
-                ><button class="btn-3">JOIN US</button></a
-              >
-            </li>
-          </ul>
+    #header-box ul.mobile-menu-open {
+      display: block;
+    }
 
-          <img
-            id="menu-mobile"
-            src="img/icons/menu-mobile.png"
-            alt="menu icon"
-          />
-        </div>
+    #header-box ul {
+      position: absolute;
+      top: 62px;
+      /* Adjust to position below menu icon */
+      right: 5px;
+      width: 40%;
+      background-color: #3e3e3e;
+      /* Light brown */
+      z-index: 9;
+      display: none;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    #header-box ul.mobile-menu-open {
+      display: block;
+    }
+  </style>
+
+  <!-- css links -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body cz-shortcut-listen="true">
+  <!-- header -->
+  <header id="header">
+    <div class="container">
+      <div id="header-box">
+        <img id="logo" src="img/logo.png" alt="logo" />
+
+        <ul>
+          <li><a href="#hero">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#token">TOKEN</a></li>
+          <li><a href="#join">COMMUNITY</a></li>
+          <li class="join-us">
+            <a href="https://t.me/PWBonsol" target="_blank" rel="noopener noreferrer"><button class="btn-3">JOIN
+                US</button></a>
+          </li>
+        </ul>
+
+        <img id="menu-mobile" src="img/icons/menu-mobile.png" alt="menu icon" />
+
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- hero -->
+  <!-- hero -->
 
-    <section id="hero">
-      <div class="container">
-        <div id="hero-box">
-          <div>
-            <h1>$PWB</h1>
-            <h2 style="margin-top: 50px">First Dog Ever Photographed</h2>
-            <p class="ca">CA: xxxxxxxxxxxxxxxxxxxxxxxx</p>
+  <section id="hero">
+    <div class="container">
+      <div id="hero-box">
+        <div>
+          <h1>$PWB</h1>
+          <h2 style="margin-top: 50px">First Dog Ever Photographed</h2>
+          <p class="ca">CA: xxxxxxxxxxxxxxxxxxxxxxxx</p>
 
-            <div class="btn-flex">
-              <a href="buylink" target="_blank" rel="noopener noreferrer"
-                ><button class="btn-1">BUY $PWB</button></a
-              >
-              <a href="chartlink" target="_blank" rel="noopener noreferrer"
-                ><button class="btn-2">VIEW CHART</button></a
-              >
-            </div>
+          <div class="btn-flex">
+            <a href="buylink" target="_blank" rel="noopener noreferrer"><button class="btn-1">BUY $PWB</button></a>
+            <a href="chartlink" target="_blank" rel="noopener noreferrer"><button class="btn-2">VIEW CHART</button></a>
+          </div>
 
-            <!-- <div id="hero-flex">
+          <!-- <div id="hero-flex">
               <h3>Find Us On:</h3>
               <div id="hero-links">
                 <a href="#" target="_blank" rel="noopener noreferrer">
@@ -95,172 +115,182 @@
                 </a>
               </div>
             </div> -->
-          </div>
+        </div>
 
-          <img style="border-radius: 9px" src="img/frame.png" alt="logo" />
+        <img style="border-radius: 9px" src="img/frame.png" alt="logo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- slogan -->
+
+  <section id="slogan">
+    <h2>Join the First Dog Ever $PWB!</h2>
+    <h2><span>Join the First Dog Ever $PWB!</span></h2>
+    <h2>Join the First Dog Ever $PWB!</h2>
+    <h2><span>Join the First Dog Ever $PWB!</span></h2>
+    <h2>Join the First Dog Ever $PWB!</h2>
+    <h2><span>Join the First Dog Ever $PWB!</span></h2>
+  </section>
+
+  <!-- about -->
+
+  <section id="about">
+    <div class="container">
+      <div id="about-box">
+        <img src="img/img2.png" alt="timmy" />
+
+        <div>
+          <h3><span>ABOUT US</span></h3>
+          <!-- <h3>Meet DogCoin $PWB - the Latest Addition to the Trump Family.</h3> -->
+          <p style="color: white">
+            In the mid-19th century, as photography was still in its infancy,
+            an unknown dog became the first ever captured on camera. This
+            historic image, believed to have been taken using the
+            daguerreotype process, immortalized not just the canine subject
+            but also a moment of technological and artistic advancement.
+            <br />
+            <br />
+            While the dog's identity remains a mystery, its place in history
+            is undeniable—a silent witness to the birth of photography. This
+            early photograph symbolizes the timeless bond between humans and
+            their four-legged companions.
+          </p>
+
+          <a href="https://t.me/PWBonsol" target="_blank" rel="noopener noreferrer"><button class="btn-3">JOIN
+              COMMUNITY</button></a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- slogan -->
+  <!-- info -->
 
-    <section id="slogan">
-      <h2>Join the First Dog Ever $PWB!</h2>
-      <h2><span>Join the First Dog Ever $PWB!</span></h2>
-      <h2>Join the First Dog Ever $PWB!</h2>
-      <h2><span>Join the First Dog Ever $PWB!</span></h2>
-      <h2>Join the First Dog Ever $PWB!</h2>
-      <h2><span>Join the First Dog Ever $PWB!</span></h2>
-    </section>
+  <section id="info">
+    <div class="container">
+      <div id="info-box">
+        <h2>First Dog Ever Photographed</h2>
 
-    <!-- about -->
+        <img src="img/logo.png" alt="timmy" />
+      </div>
+    </div>
+  </section>
 
-    <section id="about">
-      <div class="container">
-        <div id="about-box">
-          <img src="img/img2.png" alt="timmy" />
+  <!-- token -->
 
-          <div>
-            <h3><span>ABOUT US</span></h3>
-            <!-- <h3>Meet DogCoin $PWB - the Latest Addition to the Trump Family.</h3> -->
-            <p style="color: white">
-              In the mid-19th century, as photography was still in its infancy,
-              an unknown dog became the first ever captured on camera. This
-              historic image, believed to have been taken using the
-              daguerreotype process, immortalized not just the canine subject
-              but also a moment of technological and artistic advancement.
-              <br />
-              <br />
-              While the dog's identity remains a mystery, its place in history
-              is undeniable—a silent witness to the birth of photography. This
-              early photograph symbolizes the timeless bond between humans and
-              their four-legged companions.
-            </p>
+  <section id="token">
+    <div class="container">
+      <p><span>TOKEN</span></p>
+      <h2 style="color: white">$PWB Tokenomics</h2>
 
-            <a href="https://t.me/PWBonsol" target="_blank" rel="noopener noreferrer"
-              ><button class="btn-3">JOIN COMMUNITY</button></a
-            >
-          </div>
+      <p style="color: white">
+        Discover the details of the $PWB token, including its total supply,
+        token distribution, and tax.
+      </p>
+
+      <div id="token-box">
+        <div class="ca">
+          <h4>CA:</h4>
+          <h4>xxxxxxxxxxxxxxxxxxxxxxxx</h4>
+        </div>
+
+        <div>
+          <h4>NAME:</h4>
+          <h4>First Dog Ever Photographed</h4>
+        </div>
+        <div>
+          <h4>SYMBOL:</h4>
+          <h4>$PWB</h4>
+        </div>
+        <div>
+          <h4>NETWORK:</h4>
+          <h4>Solana</h4>
+        </div>
+
+        <div>
+          <h4>SUPPLY:</h4>
+          <h4>1,000,000,000</h4>
+        </div>
+        <div>
+          <h4>TAX:</h4>
+          <h4>BUY/SELL 0%</h4>
+        </div>
+        <div>
+          <h4>LIQUIDITY:</h4>
+          <h4>BURNED</h4>
         </div>
       </div>
-    </section>
 
-    <!-- info -->
-
-    <section id="info">
-      <div class="container">
-        <div id="info-box">
-          <h2>First Dog Ever Photographed</h2>
-
-          <img src="img/logo.png" alt="timmy" />
-        </div>
-      </div>
-    </section>
-
-    <!-- token -->
-
-    <section id="token">
-      <div class="container">
-        <p><span>TOKEN</span></p>
-        <h2 style="color: white">$PWB Tokenomics</h2>
-
-        <p style="color: white">
-          Discover the details of the $PWB token, including its total supply,
-          token distribution, and tax.
-        </p>
-
-        <div id="token-box">
-          <div class="ca">
-            <h4>CA:</h4>
-            <h4>xxxxxxxxxxxxxxxxxxxxxxxx</h4>
-          </div>
-
-          <div>
-            <h4>NAME:</h4>
-            <h4>First Dog Ever Photographed</h4>
-          </div>
-          <div>
-            <h4>SYMBOL:</h4>
-            <h4>$PWB</h4>
-          </div>
-          <div>
-            <h4>NETWORK:</h4>
-            <h4>Solana</h4>
-          </div>
-
-          <div>
-            <h4>SUPPLY:</h4>
-            <h4>1,000,000,000</h4>
-          </div>
-          <div>
-            <h4>TAX:</h4>
-            <h4>BUY/SELL 0%</h4>
-          </div>
-          <div>
-            <h4>LIQUIDITY:</h4>
-            <h4>BURNED</h4>
-          </div>
-        </div>
-
-        <div id="token-flex">
-          <h3 style="color: white">Find us on:</h3>
-          <div id="token-flex-links">
-            <a href="scanlink" target="_blank" rel="noopener noreferrer">
-              <img src="img/icons/sol.png" alt="icon" />
-            </a>
-            <a href="dexslink" target="_blank" rel="noopener noreferrer">
-              <img src="img/icons/dexscreener.png" alt="icon" />
-            </a>
-            <a href="chartlink" target="_blank" rel="noopener noreferrer">
-              <img src="img/icons/dextools.png" alt="icon" />
-            </a>
-            <a href="buylink" target="_blank" rel="noopener noreferrer">
-              <img src="img/icons/ray.png" alt="icon" />
-            </a>
-            <!-- <a href="#" target="_blank" rel="noopener noreferrer">
+      <div id="token-flex">
+        <h3 style="color: white">Find us on:</h3>
+        <div id="token-flex-links">
+          <a href="scanlink" target="_blank" rel="noopener noreferrer">
+            <img src="img/icons/sol.png" alt="icon" />
+          </a>
+          <a href="dexslink" target="_blank" rel="noopener noreferrer">
+            <img src="img/icons/dexscreener.png" alt="icon" />
+          </a>
+          <a href="chartlink" target="_blank" rel="noopener noreferrer">
+            <img src="img/icons/dextools.png" alt="icon" />
+          </a>
+          <a href="buylink" target="_blank" rel="noopener noreferrer">
+            <img src="img/icons/ray.png" alt="icon" />
+          </a>
+          <!-- <a href="#" target="_blank" rel="noopener noreferrer">
               <img src="img/icons/cg.png" alt="icon" />
             </a> -->
-          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- join -->
+  <!-- join -->
 
-    <section id="join">
-      <div class="container">
-        <div id="join-box">
-          <h2>JOIN THE COMMUNITY</h2>
-          <p>
-            Become a part of the growing $PWB community! Connect with fellow
-            enthusiasts, share memes, and stay updated on the latest news.
-            Together, we're building a strong and loyal pack.
-          </p>
-          <div class="btn-flex">
-            <a href="https://t.me/PWBonsol" target="_blank" rel="noopener noreferrer"
-              ><button class="btn-1">TELEGRAM</button></a
-            >
-            <a href="https://x.com/1stDogPhoto" target="_blank" rel="noopener noreferrer"
-              ><button class="btn-2">TWITTER | X</button></a
-            >
-          </div>
+  <section id="join">
+    <div class="container">
+      <div id="join-box">
+        <h2>JOIN THE COMMUNITY</h2>
+        <p>
+          Become a part of the growing $PWB community! Connect with fellow
+          enthusiasts, share memes, and stay updated on the latest news.
+          Together, we're building a strong and loyal pack.
+        </p>
+        <div class="btn-flex">
+          <a href="https://t.me/PWBonsol" target="_blank" rel="noopener noreferrer"><button
+              class="btn-1">TELEGRAM</button></a>
+          <a href="https://x.com/1stDogPhoto" target="_blank" rel="noopener noreferrer"><button class="btn-2">TWITTER |
+              X</button></a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- info -->
+  <!-- info -->
 
-    <footer id="footer">
-      <div class="container">
-        <div id="footer-box">
-          <div>
-            <img src="img/logo.png" alt="logo" style="margin-right: 5px" />
-            <h3>$PWB</h3>
-          </div>
-
-          <p id="disclaimer">All Rights Reserved | $PWB ; 2025</p>
+  <footer id="footer">
+    <div class="container">
+      <div id="footer-box">
+        <div>
+          <img src="img/logo.png" alt="logo" style="margin-right: 5px" />
+          <h3>$PWB</h3>
         </div>
+
+        <p id="disclaimer">All Rights Reserved | $PWB ; 2025</p>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuIcon = document.getElementById("menu-mobile");
+      const menuList = document.querySelector("#header-box ul");
+
+      menuIcon.addEventListener("click", function () {
+        menuList.classList.toggle("mobile-menu-open");
+      });
+    });
+
+  </script>
+</body>
+
 </html>

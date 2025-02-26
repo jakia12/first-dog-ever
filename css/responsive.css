@@ -80,12 +80,16 @@
   #header-box > ul {
     display: none;
   }
+  .join-us{
+    display: none;
+  }
   #menu-mobile {
     display: block;
   }
 
   #hero {
     padding-block: 2rem;
+    margin-top: 10%;
   }
 
   #hero-box {
